@@ -193,160 +193,60 @@
   <body>
     <div class="main_page">
       <div class="page_header floating_element">
-        <img src="/icons/ubuntu-logo.png" alt="Ubuntu Logo" class="floating_element"/>
+        <img src="https://logos-download.com/wp-content/uploads/2020/07/Informatica_Logo.png" height="75px" width="400px" alt="Ubuntu Logo" class="floating_element"/>
         <span class="floating_element">
           Practica 1 Redes 1 
         </span>
-	<h1>Informatica</h1>
-	<h2>Grupo #36</h2>
-	<ul>
-		<li>201602469 - Oscar Eduardo Mazariegos Lopez</li>
-		<li>201602503 - Pablo Rodrigo Barillas Calderon</li>
-		<li>201602676 - Josselyn Vanessa Polanco Gameros</li>
-		<li>201612413 - Jennifer Marisol Lopez Orozco</li>
-
-	</ul>
-      </div>
-<!--      <div class="table_of_contents floating_element">
-        <div class="section_header section_header_grey">
-          TABLE OF CONTENTS
-        </div>
-        <div class="table_of_contents_item floating_element">
-          <a href="#about">About</a>
-        </div>
-        <div class="table_of_contents_item floating_element">
-          <a href="#changes">Changes</a>
-        </div>
-        <div class="table_of_contents_item floating_element">
-          <a href="#scope">Scope</a>
-        </div>
-        <div class="table_of_contents_item floating_element">
-          <a href="#files">Config files</a>
-        </div>
-      </div>
--->
       <div class="content_section floating_element">
-
-
-
-        <div class="section_header">
-          <div id="changes"></div>
-                Configuration Overview
-        </div>
         <div class="content_section_text">
-          <p>
-                Ubuntu's Apache2 default configuration is different from the
-                upstream default configuration, and split into several files optimized for
-                interaction with Ubuntu tools. The configuration system is
-                <b>fully documented in
-                /usr/share/doc/apache2/README.Debian.gz</b>. Refer to this for the full
-                documentation. Documentation for the web server itself can be
-                found by accessing the <a href="/manual">manual</a> if the <tt>apache2-doc</tt>
-                package was installed on this server.
-
-          </p>
-          <p>
-                The configuration layout for an Apache2 web server installation on Ubuntu systems is as follows:
-          </p>
-          <pre>
-/etc/apache2/
-|-- apache2.conf
-|       `--  ports.conf
-|-- mods-enabled
-|       |-- *.load
-|       `-- *.conf
-|-- conf-enabled
-|       `-- *.conf
-|-- sites-enabled
-|       `-- *.conf
-          </pre>
+          <h1>Informatica</h1>
+          <h2>Grupo #36</h2>
           <ul>
-                        <li>
-                           <tt>apache2.conf</tt> is the main configuration
-                           file. It puts the pieces together by including all remaining configuration
-                           files when starting up the web server.
-                        </li>
-
-                        <li>
-                           <tt>ports.conf</tt> is always included from the
-                           main configuration file. It is used to determine the listening ports for
-                           incoming connections, and this file can be customized anytime.
-                        </li>
-
-                        <li>
-                           Configuration files in the <tt>mods-enabled/</tt>,
-                           <tt>conf-enabled/</tt> and <tt>sites-enabled/</tt> directories contain
-                           particular configuration snippets which manage modules, global configuration
-                           fragments, or virtual host configurations, respectively.
-                        </li>
-
-                        <li>
-                           They are activated by symlinking available
-                           configuration files from their respective
-                           *-available/ counterparts. These should be managed
-                           by using our helpers
-                           <tt>
-                                <a href="http://manpages.debian.org/cgi-bin/man.cgi?query=a2enmod">a2enmod</a>,
-                                <a href="http://manpages.debian.org/cgi-bin/man.cgi?query=a2dismod">a2dismod</a>,
-                           </tt>
-                           <tt>
-                                <a href="http://manpages.debian.org/cgi-bin/man.cgi?query=a2ensite">a2ensite</a>,
-                                <a href="http://manpages.debian.org/cgi-bin/man.cgi?query=a2dissite">a2dissite</a>,
-                            </tt>
-                                and
-                           <tt>
-                                <a href="http://manpages.debian.org/cgi-bin/man.cgi?query=a2enconf">a2enconf</a>,
-                                <a href="http://manpages.debian.org/cgi-bin/man.cgi?query=a2disconf">a2disconf</a>
-                           </tt>. See their respective man pages for detailed information.
-                        </li>
-
-                        <li>
-                           The binary is called apache2. Due to the use of
-                           environment variables, in the default configuration, apache2 needs to be
-                           started/stopped with <tt>/etc/init.d/apache2</tt> or <tt>apache2ctl</tt>.
-                           <b>Calling <tt>/usr/bin/apache2</tt> directly will not work</b> with the
-                           default configuration.
-                        </li>
+            <li>201602469 - Oscar Eduardo Mazariegos Lopez</li>
+            <li>201602503 - Pablo Rodrigo Barillas Calderon</li>
+            <li>201602676 - Josselyn Vanessa Polanco Gameros</li>
+            <li>201612413 - Jennifer Marisol Lopez Orozco</li>
           </ul>
         </div>
-
         <div class="section_header">
             <div id="docroot"></div>
-                Document Roots
+                TEMAS
         </div>
 
         <div class="content_section_text">
+            <h1>Informatica</h2>
             <p>
-                By default, Ubuntu does not allow access through the web browser to
-                <em>any</em> file apart of those located in <tt>/var/www</tt>,
-                <a href="http://httpd.apache.org/docs/2.4/mod/mod_userdir.html">public_html</a>
-                directories (when enabled) and <tt>/usr/share</tt> (for web
-                applications). If your site is using a web document root
-                located elsewhere (such as in <tt>/srv</tt>) you may need to whitelist your
-                document root directory in <tt>/etc/apache2/apache2.conf</tt>.
+              <b>Entrada de edificio (acometida):</b>
+              Este subsistema engloba a los cables, hardware de conexión, elementos de protección y 
+              equipo necesario para conectar las posibles instalaciones de proveedores externos con el sistema 
+              de cableado estructurado de la red local.              
             </p>
+            <br/>
             <p>
-                The default Ubuntu document root is <tt>/var/www/html</tt>. You
-                can make your own virtual hosts under /var/www. This is different
-                to previous releases which provides better security out of the box.
+              <b>Cableado vertical o Backbone:</b>
+              El cableado vertical o backbone posibilita la interconexión entre los diferentes armarios de telecomunicaciones, el cuarto de equipo y la entrada al edificio, incluyendo los cables, las terminaciones mecánicas y los cordones de parcheo para realizar las conexiones backbone a backbone.              
             </p>
+            <br/>
+            <p>
+              <b>Cuarto de equipos:</b>
+              El cuarto de equipos tiene como función principal la de alojar el equipamiento necesario para distribuir los servicios de telecomunicaciones a puntos intermedios de distribución, situados generalmente en cada una de las zonas diferenciadas de la instalación, que en edificios de varias plantas coinciden con estas y son denominados armarios de telecomunicaciones.           
+            </p>
+            <br/>
+            <p>
+              <b>Armario de Telecomunicaciones:</b>
+              Este armario tiene como función principal la de concentrar las terminaciones de todo tipo de cable horizontal reconocido por el estándar. Los cables de backbone también son terminados aquí con el fin de extender servicios de telecomunicaciones hacia las áreas de trabajo.   </p>
+            <br/>
+            <p>
+              <b>Cableado Horizontal (distribución):</b>
+              El cableado horizontal o de distribución es la parte del sistema que va desde el área de trabajo hasta la conexión cruzada horizontal en el armario de telecomunicaciones. El cableado horizontal incluye los cables de distribución, las salidas de telecomunicaciones en el área de trabajo, las terminaciones mecánicas del cable y los cordones de parcheo en el armario de telecomunicaciones.</p>
+            <br/>
+            <p>
+              <b>Área de Trabajo:</b>
+              Los componentes del área de trabajo son los existentes entre la salida del armario de telecomunicaciones y el equipo del usuario. Esta parte de la instalación no está incluida en el estándar.</p>
+            <br/>
+            
         </div>
 
-        <div class="section_header">
-          <div id="bugs"></div>
-                Reporting Problems
-        </div>
-        <div class="content_section_text">
-          <p>
-                Please use the <tt>ubuntu-bug</tt> tool to report bugs in the
-                Apache2 package with Ubuntu. However, check <a
-                href="https://bugs.launchpad.net/ubuntu/+source/apache2">existing
-                bug reports</a> before reporting a new bug.
-          </p>
-          <p>
-                Please report bugs specific to modules (such as PHP and others)
-                to respective packages, not to the web server itself.
-          </p>
         </div>
 
 
